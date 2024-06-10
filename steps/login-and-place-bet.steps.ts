@@ -1,36 +1,13 @@
-import { Given, When, Then, setWorldConstructor, Before, After, setDefaultTimeout } from '@cucumber/cucumber';
-import { chromium, Browser, Page } from 'playwright';
+import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
 import HomePage from '../pages/home.page';
 import BetsPage from '../pages/bets.page';
+import ProfilePage from '../pages/profile.page';
 import dotenv from 'dotenv';
 import path from 'path';
 
 const envFile = path.resolve(__dirname, '../env', `.env.${process.env.ENV || 'development'}`);
 dotenv.config({ path: envFile });
-
-setDefaultTimeout(60 * 1000);
-
-class CustomWorld {
-  browser: Browser;
-  page: Page;
-
-  async init() {
-    this.browser = await chromium.launch({ headless: false });
-    this.page = await this.browser.newPage();
-  }
-
-  async close() {
-    await this.page.close();
-    await this.browser.close();
-  }
-}
-
-setWorldConstructor(CustomWorld);
-
-Before(async function () {
-  await this.init();
-});
 
 Given('I navigate to the home page', async function () {
   const homePage = new HomePage(this.page);
@@ -44,7 +21,8 @@ Then('I accept all cookies', async function () {
 
 When('I click the login button', async function () {
   const homePage = new HomePage(this.page);
-  await homePage.clickLoginButton();
+  const loginButton = await homePage.loginButton()
+  await loginButton.click();
 });
 
 When('I log in with my credentials', async function () {
@@ -73,7 +51,6 @@ When('I should select Both teams to score Yes', async function() {
   await betsPage.selectBothTeamsToScoreYes()
 });
 
-
 When('I enter the bet amount {string}', async function (amount: string) {
   const betsPage = new BetsPage(this.page);
   await betsPage.enterBetAmount(parseInt(amount));
@@ -94,4 +71,28 @@ Then('I should see insufficient funds text', async function () {
   const betsPage = new BetsPage(this.page);
   const insufficientVisible = await betsPage.insuffientSection();
   expect(insufficientVisible).toBe(true);
+});
+
+When('I navigate to the profile page', async function () {
+  const profilePage = new ProfilePage(this.page);
+  const profileButton = await profilePage.profileButton();
+  await profileButton.click();
+})
+
+Then('I should see logout button', async function () {
+  const profilePage = new ProfilePage(this.page);
+  const logoutButton = await profilePage.logoutButton();
+  expect(logoutButton).toBeVisible();
+});
+
+When('I log out', async function () {
+  const profilePage = new ProfilePage(this.page);
+  const logoutButton = await profilePage.logoutButton();
+  await logoutButton.click();
+});
+
+Then('I should be logged out', async function () {
+  const homePage = new HomePage(this.page);
+  const loginButton = await homePage.loginButton();
+  await loginButton.isVisible();
 });

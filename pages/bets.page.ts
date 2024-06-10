@@ -1,11 +1,9 @@
 import BasePage from './base.page';
 
 class BetsPage extends BasePage {
-  private betsSection = '#bets-section';
   private footballSectionLink = 'text=Football';
   private placeBetButton = 'Place bet'; 
   private featuredSideMenu = 'text=Featured';
-  private bet = 'Both teams to score'
 
 
  async isFeaturedSideMenuVisible() {
@@ -29,7 +27,7 @@ class BetsPage extends BasePage {
   async enterBetAmount(amount: number) {
     const section = this.page.getByText('Single1 bet x£');
     await section.getByText('£').click();
-    await this.page.getByText(`£${amount}.00`).click();
+    await this.page.getByText(`£${amount}.00`).first().click();
     await this.page.getByText('Done').click();
   }
 

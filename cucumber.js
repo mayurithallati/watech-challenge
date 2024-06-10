@@ -1,11 +1,13 @@
-const common = [
-    'features/**/*.feature',               // Specify our feature files
-    '--require-module ts-node/register',   // Load TypeScript module
-    '--require steps/**/*.ts',             // Load step definitions
-    '--format progress',                   // Load custom formatter
+  const common = [
+    'features/**/*.feature',
+    '--require-module ts-node/register',
+    '--require steps/**/*.ts',
+    '--format progress'
   ].join(' ');
   
   module.exports = {
-    default: common
+    default: common,
+    desktop: `${common} --tags @desktop`,
+    tablet: `${common} --tags @tablet`,
+    mobile: `${common} --tags @mobile`
   };
-  

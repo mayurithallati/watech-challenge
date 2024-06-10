@@ -1,14 +1,13 @@
 import BasePage from './base.page';
 
 class HomePage extends BasePage {
-  private loginButton = 'button[aria-label="Login"]';
   private usernameInput = '#loginInput';
   private passwordInput = '#passwordInput';
   private submitButton = 'button[type="submit"]';
   private cookies = 'Accept All Cookies';
 
-  async clickLoginButton() {
-    await this.page.getByRole('button', { name: /Login/i }).click();
+  async loginButton() {
+    return await this.page.getByRole('button', { name: /Login/i });
   }
 
   async loginWithCredentials(username: string, password: string) {
@@ -18,7 +17,10 @@ class HomePage extends BasePage {
   }
 
   async acceptCookies() {
-    await this.page.getByRole('button', { name: this.cookies }).click();
+    const cookiesButton = this.page.getByRole('button', { name: this.cookies });
+    if (await cookiesButton.isVisible()) {
+      await cookiesButton.click();
+    }
   }
 }
 

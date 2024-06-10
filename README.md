@@ -19,13 +19,13 @@ This project is set up to perform BDD testing using Cucumber, Playwright, and Ty
    
 ### Environment Files
 
-1. There are three env files for "dev", "staging", "production", where you need to enter username password to test the https://www.virginbet.com website
+1. There are three env files for "dev", "staging", "production", where you need to rename username password to work with the https://www.virginbet.com website. since it is a private repo, i have given my unverified credentials for testing purpose.
 
 ### To run tests
 Following this pattern you will be able to test in all devices npm run test:[ENV]:[DEVICE]
 For example:
    ```bash
    npm run test:prod:desktop
-   npm run test:prod:mobile
-   npm run test:prod:tablet
    
+##### Note: at the moment, I have done only desktop related tests, i might need to add mobile separated tests but I have configured the app to support mobile, tablet too.
+

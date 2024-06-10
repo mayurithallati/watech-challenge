@@ -16,8 +16,6 @@
     "test:prod:desktop": "ENV=production npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Desktop\\\"}\"",
     "test:prod:tablet": "ENV=production npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Tablet\\\"}\"",
     "test:prod:mobile": "ENV=production npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Mobile\\\"}\"",
-    "report:generate": "npx allure generate ./allure-results --clean -o ./reports/allure-report",
-    "report:open": "npx allure open ./reports/allure-report",
     "docker:build": "docker-compose up --build",
     "docker:test": "docker-compose run playwright",
     "ci:test:all": "npx cucumber-js",
