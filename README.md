@@ -6,8 +6,8 @@ This project is set up to perform BDD testing using Cucumber, Playwright, and Ty
 
 ### Prerequisites
 
-- Node.js (v12 or higher)
-- npm or yarn
+- Node.js v22.1.0
+- npm 10.7.0
 - Docker (optional, for running tests in Docker containers)
 
 ### Installation

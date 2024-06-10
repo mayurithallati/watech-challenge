@@ -5,9 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cucumber-js",
-    "test:desktop": "ENV=development npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Desktop\\\"}\"",
-    "test:tablet": "ENV=development npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Tablet\\\"}\"",
-    "test:mobile": "ENV=development npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Mobile\\\"}\"",
     "test:all": "ENV=development npx cucumber-js",
     "test:dev:desktop": "ENV=development npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Desktop\\\"}\"",
     "test:dev:tablet": "ENV=development npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Tablet\\\"}\"",
@@ -45,5 +42,9 @@
     "prettier": "^3.3.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
+  },
+  "engines" : { 
+    "npm" : "10.7.0",
+    "node" : "22.1.0"
   }
 }
