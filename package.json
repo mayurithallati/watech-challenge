@@ -1,0 +1,49 @@
+{
+  "name": "watech-challenge-temp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js",
+    "test:desktop": "ENV=development npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Desktop\\\"}\"",
+    "test:tablet": "ENV=development npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Tablet\\\"}\"",
+    "test:mobile": "ENV=development npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Mobile\\\"}\"",
+    "test:all": "ENV=development npx cucumber-js",
+    "test:dev:desktop": "ENV=development npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Desktop\\\"}\"",
+    "test:dev:tablet": "ENV=development npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Tablet\\\"}\"",
+    "test:dev:mobile": "ENV=development npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Mobile\\\"}\"",
+    "test:staging:desktop": "ENV=staging npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Desktop\\\"}\"",
+    "test:staging:tablet": "ENV=staging npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Tablet\\\"}\"",
+    "test:staging:mobile": "ENV=staging npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Mobile\\\"}\"",
+    "test:prod:desktop:debug": "PWDEBUG=1 ENV=production npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Desktop\\\"}\"",
+    "test:prod:desktop": "ENV=production npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Desktop\\\"}\"",
+    "test:prod:tablet": "ENV=production npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Tablet\\\"}\"",
+    "test:prod:mobile": "ENV=production npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Mobile\\\"}\"",
+    "report:generate": "npx allure generate ./allure-results --clean -o ./reports/allure-report",
+    "report:open": "npx allure open ./reports/allure-report",
+    "docker:build": "docker-compose up --build",
+    "docker:test": "docker-compose run playwright",
+    "ci:test:all": "npx cucumber-js",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "playwright": "^1.14.1",
+    "typescript": "^4.4.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.2",
+    "dotenv": "^16.4.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "playwright": "^1.44.1",
+    "prettier": "^3.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
