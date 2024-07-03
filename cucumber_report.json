@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2697426583
+              "duration": 2322956005
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1692011592
+              "duration": 1639756852
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1120898531
+              "duration": 657469701
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 53296428
+              "duration": 42545191
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 210297296
+              "duration": 241491313
             }
           },
           {
@@ -74,12 +74,9 @@
             "keyword": "And ",
             "line": 9,
             "name": "I select first friendly-international match",
-            "match": {
-              "location": "steps/login-and-place-bet.steps.ts:44"
-            },
             "result": {
-              "status": "passed",
-              "duration": 946983131
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
@@ -88,11 +85,11 @@
             "line": 10,
             "name": "I should select Both teams to score Yes",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:49"
+              "location": "steps/login-and-place-bet.steps.ts:50"
             },
             "result": {
-              "status": "passed",
-              "duration": 5833889280
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -101,11 +98,11 @@
             "line": 11,
             "name": "I enter the bet amount \"50\"",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:54"
+              "location": "steps/login-and-place-bet.steps.ts:55"
             },
             "result": {
-              "status": "passed",
-              "duration": 6214389001
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -114,11 +111,11 @@
             "line": 12,
             "name": "I verify the bet amount",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:59"
+              "location": "steps/login-and-place-bet.steps.ts:60"
             },
             "result": {
-              "status": "passed",
-              "duration": 13356726
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -127,11 +124,11 @@
             "line": 13,
             "name": "I click the place bet button",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:65"
+              "location": "steps/login-and-place-bet.steps.ts:66"
             },
             "result": {
-              "status": "passed",
-              "duration": 1588198017
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -143,8 +140,8 @@
               "location": "steps/login-and-place-bet.steps.ts:28"
             },
             "result": {
-              "status": "passed",
-              "duration": 8352964507
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -153,11 +150,11 @@
             "line": 15,
             "name": "I navigate to the profile page",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:76"
+              "location": "steps/login-and-place-bet.steps.ts:77"
             },
             "result": {
-              "status": "passed",
-              "duration": 17404289237
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -166,11 +163,11 @@
             "line": 16,
             "name": "I should see logout button",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:82"
+              "location": "steps/login-and-place-bet.steps.ts:83"
             },
             "result": {
-              "status": "passed",
-              "duration": 6640585
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -179,11 +176,11 @@
             "line": 17,
             "name": "I log out",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:88"
+              "location": "steps/login-and-place-bet.steps.ts:89"
             },
             "result": {
-              "status": "passed",
-              "duration": 240215210
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -192,11 +189,11 @@
             "line": 18,
             "name": "I should be logged out",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:94"
+              "location": "steps/login-and-place-bet.steps.ts:95"
             },
             "result": {
-              "status": "passed",
-              "duration": 10931650
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -204,7 +201,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 236147103
+              "duration": 361730429
             }
           }
         ],
@@ -228,7 +225,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1359303771
+              "duration": 1450522101
             }
           },
           {
@@ -241,7 +238,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1226831042
+              "duration": 1525739102
             }
           },
           {
@@ -254,7 +251,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1140530679
+              "duration": 775244068
             }
           },
           {
@@ -267,7 +264,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 240913247
+              "duration": 297210876
             }
           },
           {
@@ -280,7 +277,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 315168415
+              "duration": 447606659
             }
           },
           {
@@ -293,7 +290,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13825035
+              "duration": 16712678
             }
           },
           {
@@ -306,20 +303,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3633395735
+              "duration": 2361241470
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 28,
-            "name": "I select first friendly-international match",
+            "name": "I select first match",
             "match": {
               "location": "steps/login-and-place-bet.steps.ts:44"
             },
             "result": {
               "status": "passed",
-              "duration": 1208215036
+              "duration": 999389843
             }
           },
           {
@@ -328,11 +325,11 @@
             "line": 29,
             "name": "I should select Both teams to score Yes",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:49"
+              "location": "steps/login-and-place-bet.steps.ts:50"
             },
             "result": {
               "status": "passed",
-              "duration": 6290904670
+              "duration": 5823035168
             }
           },
           {
@@ -341,11 +338,11 @@
             "line": 30,
             "name": "I enter the bet amount \"50\"",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:54"
+              "location": "steps/login-and-place-bet.steps.ts:55"
             },
             "result": {
               "status": "passed",
-              "duration": 6075980223
+              "duration": 6436558064
             }
           },
           {
@@ -354,11 +351,11 @@
             "line": 31,
             "name": "I verify the bet amount",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:59"
+              "location": "steps/login-and-place-bet.steps.ts:60"
             },
             "result": {
               "status": "passed",
-              "duration": 12616552
+              "duration": 12543615
             }
           },
           {
@@ -367,11 +364,11 @@
             "line": 32,
             "name": "I should see insufficient funds text",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:70"
+              "location": "steps/login-and-place-bet.steps.ts:71"
             },
             "result": {
               "status": "passed",
-              "duration": 10165971
+              "duration": 10997852
             }
           },
           {
@@ -380,11 +377,11 @@
             "line": 33,
             "name": "I navigate to the profile page",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:76"
+              "location": "steps/login-and-place-bet.steps.ts:77"
             },
             "result": {
               "status": "passed",
-              "duration": 255802981
+              "duration": 85643069
             }
           },
           {
@@ -393,11 +390,11 @@
             "line": 34,
             "name": "I should see logout button",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:82"
+              "location": "steps/login-and-place-bet.steps.ts:83"
             },
             "result": {
               "status": "passed",
-              "duration": 1313126
+              "duration": 9337109
             }
           },
           {
@@ -406,11 +403,11 @@
             "line": 35,
             "name": "I log out",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:88"
+              "location": "steps/login-and-place-bet.steps.ts:89"
             },
             "result": {
               "status": "passed",
-              "duration": 175995990
+              "duration": 245920365
             }
           },
           {
@@ -419,11 +416,11 @@
             "line": 36,
             "name": "I should be logged out",
             "match": {
-              "location": "steps/login-and-place-bet.steps.ts:94"
+              "location": "steps/login-and-place-bet.steps.ts:95"
             },
             "result": {
               "status": "passed",
-              "duration": 7702485
+              "duration": 9389695
             }
           },
           {
@@ -431,7 +428,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 199221306
+              "duration": 261748507
             }
           }
         ],

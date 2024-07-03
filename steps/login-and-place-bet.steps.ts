@@ -41,7 +41,7 @@ When('I navigate to the football section', async function () {
   await betsPage.navigateToFootballSection();
 });
 
-When('I select first friendly-international match', async function () {
+When('I select first match', async function () {
   const betsPage = new BetsPage(this.page);
   // Due to firenldy international match is not available, i am selecting any match
   await (await betsPage.selectAnyFirstMatch()).first().click();

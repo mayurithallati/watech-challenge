@@ -25,7 +25,7 @@ Feature: Place a bet on a sports event
     And I log in with my credentials
     Then I should see the featured side menu
     When I navigate to the football section
-    And I select first friendly-international match
+    And I select first match
     And I should select Both teams to score Yes
     And I enter the bet amount "50"
     And I verify the bet amount
