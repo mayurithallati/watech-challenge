@@ -1,0 +1,454 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "place-a-bet-on-a-sports-event;place-a-bet-on-a-football-match-before-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Place a bet on a football match before login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2697426583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to the home page",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1692011592
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I accept all cookies",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1120898531
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the featured side menu",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53296428
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I navigate to the football section",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 210297296
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I select first friendly-international match",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 946983131
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I should select Both teams to score Yes",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5833889280
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I enter the bet amount \"50\"",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6214389001
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I verify the bet amount",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13356726
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click the place bet button",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1588198017
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I log in with my credentials",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8352964507
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I navigate to the profile page",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17404289237
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see logout button",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6640585
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I log out",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 240215210
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should be logged out",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10931650
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 236147103
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "place-a-bet-on-a-sports-event;place-a-bet-on-a-football-match-after-login",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Place a bet on a football match after login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1359303771
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I navigate to the home page",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1226831042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I accept all cookies",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1140530679
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I click the login button",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 240913247
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I log in with my credentials",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 315168415
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I should see the featured side menu",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13825035
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I navigate to the football section",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3633395735
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I select first friendly-international match",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1208215036
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I should select Both teams to score Yes",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6290904670
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I enter the bet amount \"50\"",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6075980223
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I verify the bet amount",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12616552
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I should see insufficient funds text",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10165971
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I navigate to the profile page",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 255802981
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "I should see logout button",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1313126
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I log out",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175995990
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "I should be logged out",
+            "match": {
+              "location": "steps/login-and-place-bet.steps.ts:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7702485
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 199221306
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 20
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "place-a-bet-on-a-sports-event",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Place a bet on a sports event",
+    "tags": [],
+    "uri": "features/login-and-place-bet.feature"
+  }
+]
