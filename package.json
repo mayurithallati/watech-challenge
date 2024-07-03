@@ -16,6 +16,7 @@
     "test:prod:desktop": "ENV=production npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Desktop\\\"}\"",
     "test:prod:tablet": "ENV=production npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Tablet\\\"}\"",
     "test:prod:mobile": "ENV=production npx cucumber-js --world-parameters \"{\\\"device\\\":\\\"Mobile\\\"}\"",
+    "generate-report": "node cucumber.report.js",
     "docker:build": "docker-compose up --build",
     "docker:test": "docker-compose run playwright",
     "ci:test:all": "npx cucumber-js",
@@ -33,6 +34,7 @@
     "@cucumber/cucumber": "^10.8.0",
     "@playwright/test": "^1.44.1",
     "@types/node": "^20.14.2",
+    "cucumber-html-reporter": "^7.1.1",
     "dotenv": "^16.4.5",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
@@ -41,8 +43,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
-  "engines" : { 
-    "npm" : "10.7.0",
-    "node" : "22.1.0"
+  "engines": {
+    "npm": "10.7.0",
+    "node": "22.1.0"
   }
 }

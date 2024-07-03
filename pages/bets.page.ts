@@ -18,6 +18,10 @@ class BetsPage extends BasePage {
     return this.page.locator('a[href*="/sports/football/friendly-international"]');
   }
 
+  async selectAnyFirstMatch() {
+    return this.page.locator('a[href*="/sports/football/euro"]');
+  }
+
   async selectBothTeamsToScoreYes() {
     const parentDiv = this.page.locator('div').filter({ hasText: /^Both teams to score$/ }).locator('..')
     const yesButton = parentDiv.getByText(/^Yes/)
